@@ -21,12 +21,6 @@ function property(target: any, key: string){
 class Person {
     @property
     public firstName: string
-    @property
-    public salary: number
-
-    calculateSalary(
-        @parameterDecorator taxes: number, 
-        @parameterDecorator discount: number)
 }
 const person = new Person()
 person.firstName = 'Haider'
